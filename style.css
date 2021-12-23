@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html{
+	width:100vw;
+background-image: url(images/DNA_small.svg);
+overflow:hidden
+}
+body{
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #014e68bf, #0a839deb);
+    width:100vw;
+height: 100vh;
+overflow-x: hidden;
+scroll-snap-type: y mandatory;
+}
+header{
+    background: #114754;
+color:white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 99999;
+}
+.logo{
+    width:100px;
+    margin-right: auto;
+margin-left: auto;
+}
+header div p{
+    font-size: clamp(1rem,3.5vw,25px);
+    display: inline-block;
+    margin-right: auto;
+width: 40%;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+	background: radial-gradient(circle at 21% 52px,#00000038 7px,transparent 177px);
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    scroll-snap-align: start;
+}
+
+section:nth-of-type(2){
+    background-color: #05b38a8c;
+    color: white;
+    font-size: 25px;
+    flex-direction: column;
+}
+section:nth-of-type(2) .content{
+   width: 60%;
+   margin-top: auto;
+}
+.test img{
+    display: inline-block;
+    width:20px;
+    margin-right: 10px;
+}
+.test-title,.test-price{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.bottom{
+    padding: 40px 0;
+    margin-top:auto;
+    bottom:0;
+}
+.test.pcr{
+    transform: translate(-70%);
+}
+.test.antigen{
+    transform: translate(70%);
+
+}
+.test{
+    font-size: clamp(1rem,5vw,25px);
+    border: 1px solid;
+    min-width:30%;
+    min-height: 30%;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 16px 3px #0301169c;
+    opacity: 0;
+    animation: move 1s ease-out forwards;
+    border-radius: 8px;
+    background: #def7fdfc;
+    font-family: system-ui;
+    flex-basis: 400px;
+}
+
+
+@keyframes move {
+    to{
+        opacity: 1;
+        transform: translate(0);
+       
+    }
+    
+}
+
+.test p{
+    margin:20px
+}
+
+
+#plane{
+    display: inline-block;
+    position: absolute;
+    transform: translate(-67vw, -30vh) rotate(45deg);
+     font-size: 70px;
+     
+     margin-left: 20px;
+}
+.plane-animation{
+    animation: plane 2s ease-out  forwards;
+}
+@keyframes plane {
+    to{
+        transform: none;
+        font-size: 25px;
+       
+    }
+    
+}

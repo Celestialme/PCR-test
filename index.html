@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCR TEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class='background'>    </div>
+<header >
+   <div>
+        <img class='logo' src="images/logo medical 1.svg" alt="">
+        <p class='header-title'>Covid-19 დიაგნოსტიკა ადგილზე გამოძახებით</p>
+    </div>
+</header>
+
+<section >
+    <div class='test pcr'>
+        <p class='test-title'>PCR ტესტი<p>
+            <p class='test-price'>75 ლარი<p>
+            <div class='contact'>
+                <p> კონტაქტი:<p>
+                    <p class='test-call'> <img src="images/phone.svg"> +995 599 700 307</p>
+                    <p class='test-call'><img src="images/phone.svg"> +995 598 432 007</p>
+                    <p class='test-call'><img src="images/email.svg"> medpcrlab@gmail.com</p>
+            </div>
+           
+
+    </div>
+    <div class='test antigen'>
+        <p class='test-title'>ანტიგენის სწრაფი ტესტი<p>
+            <p class='test-price'>30 ლარი<p>
+            <div class='contact'>
+                <p> კონტაქტი:<p>
+                    <p class='test-call'> <img src="images/phone.svg"> +995 599 700 307</p>
+                    <p class='test-call'><img src="images/phone.svg"> +995 598 432 007</p>
+                    <p class='test-call'><img src="images/email.svg"> medpcrlab@gmail.com</p>
+            </div>
+           
+
+    </div>
+</section>
+
+
+<section>
+
+<div class='content'>
+
+    <p class='center'>COVID-19 PCR ტესტი საზღვარზე წარსადგენად <span id='plane'>✈️</span> </p>
+    
+    <p>✅გაიცემა ორენოვანი პასუხი( ქართული და ინგლისური) </p>
+    <p>✅ტესტის პასუხზე დატანილია უნიკალური QR კოდი</p>
+    <p>✅ტესტის პასუხი ვალიდურია 72 საათის განმავლობაში⏱</p>
+    
+    <p>📣ეპიდ-რეგულაციებიდან გამომდინარე PCR ტესტის ჩატარება საჭიროა საქართელოში შემოსვლიდან 72 საათის განმავლობაში და ქვეყნიდან გასვლისას, საზღვარზე წარსადგენად.</p>
+    
+    <p>🏠სასურველ მისამართზე ვიზიტის გასაფორმებლად მოგვწერეთ Facebook გვერდზე ან დაგვიკავშირდით ნომერზე</p>
+    <p>📞 +995 599 700 307</p>
+   
+
+</div>
+<div class='bottom'>
+
+    <p class='center'>იმოგზაურეთ მშვიდად და უსაფრთხოდ!💫</p>
+    
+    <p class='center'>გისურვებთ ჯანმრთელობას!👩‍⚕️</p>
+</div>
+</section>
+
+
+
+</body>
+
+
+</html>
+
+<script>
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const plane = entry.target.querySelector('#plane');
+
+    if (entry.isIntersecting) {
+      plane.classList.add('plane-animation');
+	  return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    plane.classList.remove('plane-animation');
+  });
+});
+
+observer.observe(document.querySelector('.content'));
+</script>
