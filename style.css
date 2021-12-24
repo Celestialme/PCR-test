@@ -56,6 +56,7 @@ section{
     min-height: 100vh;
     padding-top: 100px;
     flex-wrap: wrap;
+    box-shadow: -2px 1px 15px 1px #0000007d;
 }
 
 .section2,.section3,.section4{
@@ -115,7 +116,6 @@ section{
     background-color: white;
     box-shadow: 4px 4px 16px 3px #0301169c;
     opacity: 0;
-    animation: move 1s ease-out forwards;
     border-radius: 8px;
     background: #def7fdfc;
     font-family: system-ui;
@@ -201,7 +201,7 @@ transition: 1.5s ease-in-out;
     transition: 0.5s linear;
   }
   input:checked ~ .tab-content {
-    max-height: 300px;
+    max-height: 400px;
      
   }
   input{
