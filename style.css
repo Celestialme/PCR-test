@@ -94,7 +94,7 @@ section{
     margin:0;
 }
 .timings{
-    padding-right: calc( 1em + 10px);
+    padding-right: calc( 1em + 5px);
 }
 .test-title,.test-price{
     text-align: center;
@@ -140,9 +140,31 @@ section{
 }
 
 .test p{
-    margin:20px
+    margin:20px;
+    position: relative;
 }
-
+.content p{
+    position:relative;
+}
+.content  p:nth-child(1){
+	margin-bottom:10px;
+}
+.content:hover  p:nth-child(1):after{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:0;
+    bottom:-8px;
+    height:2px;
+    background:#1488b5;
+    animation:grow 0.5s ease-in-out forwards
+}
+@keyframes grow{
+    to{
+        width:100%;
+        left:0;
+    }
+}
 
 #plane{
      display: inline-block;
