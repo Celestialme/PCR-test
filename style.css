@@ -17,6 +17,7 @@ background: linear-gradient(to right, #014e68bf, #0a839deb);
     width:100vw;
 height: 100vh;
 overflow-x: hidden;
+font-family: 'Noto Serif Georgian', serif;
 
 }
 header{
@@ -89,6 +90,12 @@ section{
     width:20px;
     margin-right: 10px;
 }
+.test-price img{
+    margin:0;
+}
+.timings{
+    padding-right: calc( 1em + 10px);
+}
 .test-title,.test-price{
     text-align: center;
 }
@@ -116,9 +123,9 @@ section{
     background-color: white;
     box-shadow: 4px 4px 16px 3px #0301169c;
     opacity: 0;
+    animation: move 1s ease-out forwards;
     border-radius: 8px;
     background: #def7fdfc;
-    font-family: system-ui;
     flex-basis: 400px;
 }
 
