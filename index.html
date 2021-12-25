@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCR TEST</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -23,7 +26,8 @@
 <section >
     <div class='test pcr'>
         <p class='test-title'>PCR ტესტი<p>
-            <p class='test-price'>75 ლარი<p>
+            <p class='test-price'>75 ლარი  | 120 ლარი<p>
+            <div class='center timings'><img src="images/regular_time.svg">10-12 სთ | <img src="images/fast_time.svg">6-8 სთ</div>
             <div class='contact'>
                 <p> კონტაქტი:<p>
                     <p class='test-call'> <img src="images/phone.svg"> +995 599 700 307</p>
@@ -36,6 +40,8 @@
     <div class='test antigen'>
         <p class='test-title'>ანტიგენის სწრაფი ტესტი<p>
             <p class='test-price'>30 ლარი<p>
+            <div class='center'><img src="images/regular_time.svg">10-15 წთ</div>
+
             <div class='contact'>
                 <p> კონტაქტი:<p>
                     <p class='test-call'> <img src="images/phone.svg"> +995 599 700 307</p>
@@ -179,9 +185,3 @@ item.style.transform='scale('+Math.random()+')'
 
 },1500)
 </script>
-<style>
-    .test{
-        animation: move 1s ease-out forwards;
-
-    }
-</style>
