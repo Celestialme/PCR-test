@@ -152,7 +152,7 @@ section{
 .content  p:nth-child(1){
 	margin-bottom:10px;
 }
-.content:hover  p:nth-child(1):after{
+.content p:nth-child(1):after{
     content:'';
     position:absolute;
     left:50%;
@@ -160,13 +160,11 @@ section{
     bottom:-8px;
     height:2px;
     background:#1488b5;
-    animation:grow 0.5s ease-in-out forwards
+    transition: 0.5s ease-in-out;
 }
-@keyframes grow{
-    to{
-        width:100%;
-        left:0;
-    }
+.content:hover p:nth-child(1):after{
+  width:100%;
+  left:0;
 }
 
 #plane{
