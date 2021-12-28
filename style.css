@@ -147,6 +147,7 @@ section{
 }
 .content p{
     position:relative;
+    clear:both
 }
 .content  p:nth-child(1){
 	margin-bottom:10px;
