@@ -8,8 +8,7 @@ html{
 	width:100vw;
 background-image: url(images/DNA_small.svg);
 overflow-x:hidden;
-overflow-y:scroll;
-scroll-behavior: smooth;
+
 }
 body{
     background: #00B4DB;  /* fallback for old browsers */
@@ -20,12 +19,13 @@ background: linear-gradient(to right, #014e68bf, #0a839deb);
 height: 100vh;
 overflow-x: hidden;
 font-family: 'Noto Serif Georgian', sans-serif;
+scroll-behavior: smooth;
 
 }
 header{
     background: #114754;
 color:white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
